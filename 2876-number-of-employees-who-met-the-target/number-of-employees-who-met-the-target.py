@@ -7,7 +7,7 @@ class Solution(object):
         """
         ans=0
         for i in hours:
-            if i>=target:
+            if (i>=target):
                 ans+=1
         return ans
         
