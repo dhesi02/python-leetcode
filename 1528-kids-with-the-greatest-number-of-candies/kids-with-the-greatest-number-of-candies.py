@@ -1,8 +1,11 @@
 class Solution(object):
     def kidsWithCandies(self, candies, extraCandies):
-        result = []
-        maxCandies = max(candies)
+
+        check=max(candies)
+        print(check)
+        ans=[]
         for i in range(len(candies)):
-            result.append(candies[i] + extraCandies >= maxCandies)
-        return result
+            ck=candies[i]+extraCandies
+            ans.append(ck>=check)
+        return ans
         
